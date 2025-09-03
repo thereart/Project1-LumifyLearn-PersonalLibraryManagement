@@ -1,0 +1,4 @@
+# Document file
+# ignore the following file types
+*.docx
+*.xlsx
