@@ -34,7 +34,7 @@ class UserManager:
 # -------------- ERROR ON LINE 37 --------------
 if __name__ == "__main__":
     um = UserManager()
-    um.users = {}  # ❌ ERROR: users is redefined as dict (should be a list)
+    um.users = []  # ❌ ERROR: users is redefined as dict (should be a list)
     um.add_user("U002", "Bob", "bob@example.com")  # This will raise an error
     um.list_users()
 
@@ -46,3 +46,4 @@ if __name__ == "__main__":
 # Reason: A dictionary has no .append() method, which is used in add_user.
 #
 #
+
